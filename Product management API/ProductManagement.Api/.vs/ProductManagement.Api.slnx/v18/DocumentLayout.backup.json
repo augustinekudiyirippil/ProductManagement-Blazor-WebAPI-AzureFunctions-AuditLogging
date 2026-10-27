@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|c:\\augustine\\training\\first training app\\product management\\product management api\\productmanagement.api\\services\\blobstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|solutionrelative:services\\blobstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|c:\\augustine\\training\\first training app\\product management\\product management api\\productmanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|c:\\augustine\\training\\first training app\\product management\\product management api\\productmanagement.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|c:\\augustine\\training\\first training app\\product management\\product management api\\productmanagement.api\\services\\iblobstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|solutionrelative:services\\iblobstorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|c:\\augustine\\training\\first training app\\product management\\product management api\\productmanagement.api\\dtos\\productimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|solutionrelative:dtos\\productimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|c:\\augustine\\training\\first training app\\product management\\product management api\\productmanagement.api\\repositories\\productimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|solutionrelative:repositories\\productimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|c:\\augustine\\training\\first training app\\product management\\product management api\\productmanagement.api\\repositories\\iproductimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|solutionrelative:repositories\\iproductimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|c:\\augustine\\training\\first training app\\product management\\product management api\\productmanagement.api\\data\\productimageuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C104E3-4578-2C47-5585-3C0EC533A812}|ProductManagement.Api.csproj|solutionrelative:data\\productimageuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IBlobStorageService.cs",
+              "DocumentMoniker": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Services\\IBlobStorageService.cs",
+              "RelativeDocumentMoniker": "Services\\IBlobStorageService.cs",
+              "ToolTip": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Services\\IBlobStorageService.cs",
+              "RelativeToolTip": "Services\\IBlobStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T14:09:07.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductImageDto.cs",
+              "DocumentMoniker": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\DTOs\\ProductImageDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\ProductImageDto.cs",
+              "ToolTip": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\DTOs\\ProductImageDto.cs",
+              "RelativeToolTip": "DTOs\\ProductImageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T14:08:13.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductImageRepository.cs",
+              "DocumentMoniker": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Repositories\\ProductImageRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ProductImageRepository.cs",
+              "ToolTip": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Repositories\\ProductImageRepository.cs",
+              "RelativeToolTip": "Repositories\\ProductImageRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T12:36:20.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IProductImageRepository.cs",
+              "DocumentMoniker": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Repositories\\IProductImageRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IProductImageRepository.cs",
+              "ToolTip": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Repositories\\IProductImageRepository.cs",
+              "RelativeToolTip": "Repositories\\IProductImageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T12:35:08.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAASwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T09:47:21.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlobStorageService.cs",
+              "DocumentMoniker": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Services\\BlobStorageService.cs",
+              "RelativeDocumentMoniker": "Services\\BlobStorageService.cs",
+              "ToolTip": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Services\\BlobStorageService.cs",
+              "RelativeToolTip": "Services\\BlobStorageService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAiwEMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T09:47:21.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAEcBAAAAAAAAAAAiwGMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T09:43:51.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductImageUploadDto.cs",
+              "DocumentMoniker": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Data\\ProductImageUploadDto.cs",
+              "RelativeDocumentMoniker": "Data\\ProductImageUploadDto.cs",
+              "ToolTip": "C:\\Augustine\\Training\\First Training App\\Product Management\\Product management API\\ProductManagement.Api\\Data\\ProductImageUploadDto.cs",
+              "RelativeToolTip": "Data\\ProductImageUploadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T09:43:21.233Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

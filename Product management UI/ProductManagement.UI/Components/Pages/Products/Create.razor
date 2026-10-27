@@ -1,0 +1,59 @@
+﻿@page "/products/create"
+@rendermode InteractiveServer
+
+@using ProductManagement.UI.Models
+@using ProductManagement.UI.Services
+
+@inject ProductApiService ProductApiService
+@inject NavigationManager Navigation
+<a href="/products">
+    Back to  Products
+</a>
+<h3>Create Product</h3>
+
+<EditForm Model="@product"
+          OnValidSubmit="SaveProduct"
+          FormName="CreateProductForm">
+
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label>Name</label>
+        <InputText class="form-control"
+                   @bind-Value="product.Name" />
+    </div>
+
+    <div class="mb-3">
+        <label>Description</label>
+        <InputText class="form-control"
+                   @bind-Value="product.Description" />
+    </div>
+
+    <div class="mb-3">
+        <label>Price</label>
+        <InputNumber class="form-control"
+                     @bind-Value="product.Price" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Save
+    </button>
+
+</EditForm>
+
+@code
+{
+    private Product product = new();
+
+    private async Task SaveProduct()
+    {
+        
+
+        await ProductApiService.CreateProductAsync(product);
+
+        Navigation.NavigateTo("/products");
+    }
+}
+
+ 

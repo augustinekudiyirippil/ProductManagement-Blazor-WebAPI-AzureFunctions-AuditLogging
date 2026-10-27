@@ -1,0 +1,90 @@
+﻿@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+
+@inject ProtectedSessionStorage SessionStorage
+@inject NavigationManager Navigation
+
+@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+         
+
+        <div class="bg-light p-2 text-end">
+            Welcome: @displayName
+
+            <button class="btn btn-outline-danger btn-sm ms-3"
+                    @onclick="Logout">
+                Logout
+            </button>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    .
+    <span class="dismiss">🗙</span>
+</div>
+
+@code
+{
+    private string displayName = "";
+
+    protected override void OnInitialized()
+    {
+
+    Console.WriteLine("MainLayout OnInitialized");
+
+    }
+
+    protected override async Task OnAfterRenderAsync(
+    bool firstRender)
+    {
+        if (firstRender)
+        {
+            Console.WriteLine("Trying to read DisplayName");
+
+            var result =
+                await SessionStorage.GetAsync<string>(
+                    "DisplayName");
+
+            Console.WriteLine(
+                $"Success = {result.Success}");
+
+            if (result.Success)
+            {
+                displayName =
+                    result.Value ?? "";
+
+                Console.WriteLine(
+                    $"DisplayName = {displayName}");
+            }
+
+            StateHasChanged();
+        }
+    }
+
+    private async Task Logout()
+    {
+        await SessionStorage.DeleteAsync(
+            "IsLoggedIn");
+
+        await SessionStorage.DeleteAsync(
+            "DisplayName");
+
+        await SessionStorage.DeleteAsync(
+            "UserName");
+
+        Navigation.NavigateTo(
+            "/login",
+            true);
+    }
+}

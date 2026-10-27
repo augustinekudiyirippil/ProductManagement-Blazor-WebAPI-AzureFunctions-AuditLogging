@@ -1,0 +1,163 @@
+﻿
+
+@page "/products"
+
+@using ProductManagement.UI.Models
+@using ProductManagement.UI.Services
+
+@inject ProductApiService ProductApiService
+
+<h3>Products</h3>
+ 
+<a class="btn btn-primary mb-3"
+   href="/products/create">
+    Create Product
+</a>
+
+@if (products == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var product in products)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.Description</td>
+                    <td>@product.Price</td>
+
+                    
+                    <td>
+                        @if (product.IsAvailable)
+                        {
+                            <span class="badge bg-success">
+                                Available
+                            </span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">
+                                Disabled
+                            </span>
+                        }
+                    </td>
+
+
+                    
+
+                    <td>
+                        <a class="btn btn-outline-primary btn-sm"
+                            href="/products/details/@product.Id">
+                            Details
+                        </a>
+
+
+                        <a class="btn btn-outline-warning btn-sm"
+                            href="/products/edit/@product.Id">
+                            Edit
+                        </a>
+
+                        <a class="btn btn-outline-danger btn-sm"
+                            href="/products/delete/@product.Id">
+                            Delete
+                        </a>
+
+                        @if (product.IsAvailable)
+                        {
+                            <button class="btn btn-warning btn-sm me-1"
+                                    @onclick="() => DisableProduct(product)">
+                                Disable
+                            </button>
+                        }
+
+                        @if (!product.IsAvailable)
+                        {
+                            <button class="btn btn-success btn-sm me-1"
+                                    @onclick="() => EnableProduct(product)">
+                                Enable
+                            </button>
+                        }
+
+                    </td>
+
+
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code
+{
+    private List<Product>? products;
+
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     products = await ProductApiService.GetProductsAsync();
+    // }
+
+    protected override async Task OnAfterRenderAsync( bool firstRender)
+    {
+        if (firstRender)
+        {
+            products =
+                await ProductApiService
+                    .GetProductsAsync();
+
+            StateHasChanged();
+        }
+    }
+
+
+    private async Task DisableProduct(Product product)
+    {
+        try
+        {
+            await ProductApiService.DisableProductAsync(product);
+
+            product.IsAvailable = false;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(
+                $"Failed to disable product {product.Id}: {ex}");
+        }
+    }
+
+
+
+    private async Task EnableProduct(Product product)
+    {
+        try
+        {
+            await ProductApiService.EnableProductAsync(product);
+
+            product.IsAvailable = true;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(
+                $"Failed to enable product {product.Id}: {ex}");
+        }
+    }
+
+
+}
+

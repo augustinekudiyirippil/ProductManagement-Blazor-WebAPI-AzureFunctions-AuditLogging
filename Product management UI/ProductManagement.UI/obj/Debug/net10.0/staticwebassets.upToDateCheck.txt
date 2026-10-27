@@ -1,0 +1,97 @@
+wwwroot\app.css
+wwwroot\favicon.png
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+Components\Layout\ReconnectModal.razor.js
+C:\Users\KudiyirippilA\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\build\..\_framework\blazor.web.js
+C:\Users\KudiyirippilA\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\build\..\_framework\blazor.server.js
+C:\Users\KudiyirippilA\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\_framework\blazor.server.js
+C:\Users\KudiyirippilA\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\_framework\blazor.web.js
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\Components\Layout\ReconnectModal.razor.js
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+C:\Augustine\Training\First Training App\Product Management\Product management UI\ProductManagement.UI\wwwroot\app.css

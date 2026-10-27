@@ -1,0 +1,56 @@
+﻿@page "/products/delete/{Id:int}"
+@rendermode InteractiveServer
+
+@using ProductManagement.UI.Models
+@using ProductManagement.UI.Services
+
+@inject ProductApiService ProductApiService
+@inject NavigationManager Navigation
+
+<a href="/products">
+    Back to Products
+</a>
+
+<h3>Delete Product</h3>
+
+@if (product == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <p>
+        Are you sure you want to delete
+        <strong>@product.Name</strong>?
+    </p>
+
+    <button class="btn btn-danger"
+            @onclick="DeleteProduct">
+        Delete
+    </button>
+}
+
+@code
+{
+    [Parameter]
+    public int Id { get; set; }
+
+    private Product? product;
+
+    protected override async Task OnInitializedAsync()
+    {
+        product = await ProductApiService.GetProductByIdAsync(Id);
+    }
+
+    private async Task DeleteProduct()
+    {
+        if (product == null)
+        {
+            return;
+        }
+
+        await ProductApiService.DeleteProductAsync(product);
+
+        Navigation.NavigateTo("/products");
+    }
+}

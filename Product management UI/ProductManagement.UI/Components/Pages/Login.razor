@@ -1,0 +1,171 @@
+﻿@page "/login"
+@rendermode InteractiveServer
+
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@using ProductManagement.UI.DTOs
+@using ProductManagement.UI.Services
+
+@inject AuthenticationService AuthenticationService
+@inject NavigationManager Navigation
+@inject ProtectedSessionStorage SessionStorage
+
+<h3>Login</h3>
+
+<EditForm Model="@loginModel"
+          OnValidSubmit="@LoginUser"
+          FormName="LoginForm">
+
+    <DataAnnotationsValidator />
+
+    <div class="mb-3">
+        <label>Username</label>
+
+        <InputText class="form-control"
+                   @bind-Value="loginModel.Username" />
+    </div>
+
+    <div class="mb-3">
+        <label>Password</label>
+
+        <InputText type="password"
+                   class="form-control"
+                   @bind-Value="loginModel.Password" />
+    </div>
+
+    <div class="mb-3">
+        <label>
+            What is @Number1 + @Number2 ?
+        </label>
+
+        <InputText class="form-control"
+                   @bind-Value="UserAnswer" />
+    </div>
+    <div>
+    <button type="button"
+            class="btn btn-secondary mt-2"
+            @onclick="RefreshCaptcha">
+        Refresh CAPTCHA
+    </button>
+    <p></p>
+    </div>
+    <div>  
+
+    <button type="submit"
+            class="btn btn-primary">
+        Login
+    </button>
+    </div>
+
+</EditForm>
+
+@if (!string.IsNullOrWhiteSpace(errorMessage))
+{
+    <div class="alert alert-danger mt-3">
+        @errorMessage
+    </div>
+}
+
+@code
+{
+    private LoginRequestDto loginModel = new();
+
+    private string errorMessage = string.Empty;
+
+    private async Task LoginUser()
+    {
+        if (!int.TryParse(UserAnswer, out int answer)
+    || answer != CorrectAnswer)
+        {
+            errorMessage = "Incorrect CAPTCHA answer.";
+
+            GenerateCaptcha();
+
+            UserAnswer = string.Empty;
+
+            return;
+        }
+
+
+
+        var response =
+            await AuthenticationService
+                .LoginAsync(loginModel);
+
+       
+
+        if (response != null &&
+            response.IsSuccess)
+        {
+            await SessionStorage.SetAsync(
+                "IsLoggedIn",
+                true);
+
+            Console.WriteLine($"Saving DisplayName = {response.Name}");
+
+            await SessionStorage.SetAsync(
+                "DisplayName",
+                response.Name);
+
+            await SessionStorage.SetAsync(
+                "UserName",
+                response.Username);
+
+            await SessionStorage.SetAsync(
+            "UserId",
+            response.UserId);
+
+            string strToken = response.Token;
+
+            await SessionStorage.SetAsync(
+                "JwtToken",
+                response.Token);
+
+            Navigation.NavigateTo(
+                "/products",
+                true);
+        }
+        else
+        {
+            errorMessage =
+                "Wrong username or password";
+
+            GenerateCaptcha();
+
+            UserAnswer = string.Empty;
+        }
+    }
+
+
+
+    //FOR CAPTCHA
+    private int Number1;
+    private int Number2;
+    private int CorrectAnswer;
+
+    private string UserAnswer = string.Empty;
+
+
+
+    private void GenerateCaptcha()
+    {
+        Random random = new();
+
+        Number1 = random.Next(1, 10);
+        Number2 = random.Next(1, 10);
+
+        CorrectAnswer = Number1 + Number2;
+    }
+
+    protected override void OnInitialized()
+    {
+        GenerateCaptcha();
+    }
+
+    private void RefreshCaptcha()
+    {
+        GenerateCaptcha();
+
+        UserAnswer = string.Empty;
+    }
+
+}

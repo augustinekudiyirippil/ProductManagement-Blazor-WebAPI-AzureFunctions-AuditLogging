@@ -1,0 +1,69 @@
+﻿@page "/products/edit/{Id:int}"
+@rendermode InteractiveServer
+
+@using ProductManagement.UI.Models
+@using ProductManagement.UI.Services
+
+@inject ProductApiService ProductApiService
+@inject NavigationManager Navigation
+<a href="/products">
+    Back to  Products
+</a>
+<h3>Edit Product</h3>
+
+@if (product == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <EditForm Model="product" OnValidSubmit="UpdateProduct">
+
+        <div class="mb-3">
+            <label>Name</label>
+            <InputText class="form-control"
+                       @bind-Value="product.Name" />
+        </div>
+
+        <div class="mb-3">
+            <label>Description</label>
+            <InputText class="form-control"
+                       @bind-Value="product.Description" />
+        </div>
+
+        <div class="mb-3">
+            <label>Price</label>
+            <InputNumber class="form-control"
+                         @bind-Value="product.Price" />
+        </div>
+
+        <button class="btn btn-success">
+            Update
+        </button>
+
+    </EditForm>
+}
+
+@code
+{
+    [Parameter]
+    public int Id { get; set; }
+
+    private Product? product;
+
+    protected override async Task OnInitializedAsync()
+    {
+        product =
+            await ProductApiService.GetProductByIdAsync(Id);
+    }
+
+    private async Task UpdateProduct()
+    {
+        if (product != null)
+        {
+            await ProductApiService.UpdateProductAsync(product);
+
+            Navigation.NavigateTo("/products");
+        }
+    }
+}
