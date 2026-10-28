@@ -80,7 +80,7 @@ Azure Resources
     Azure Storage Account
     Application Insights
 
-Learning Outcomes
+ 
 
 This project demonstrates practical implementation of:
 
